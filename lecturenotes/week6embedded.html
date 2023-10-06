@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Week 6 Embedded CSS</title>
+        <style>
+            h1 {color:seagreen;}
+            /* body selects everything */
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color:blanchedalmond;
+            }
+            /* in em 2 is twice default size */
+            p, h1 a { /*grouped selector */
+                font-size: 2em;
+                font-weight: bolder;
+                background-color: darksalmon;
+            }
+            p a {text-decoration: none;}
+            #secondparagraph {color: chocolate;}
+            .yellow {color:yellow}
+        </style>
+    </head>
+    <body>
+        <h1 class="yellow">CSS</h1>
+        <a class="yellow" href="http://www.amazon.com"> Amazon</a>
+        <p><a href="http://www.ebay.com">Ebay</a> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <!-- each value for id must be unique -->
+        <p id="secondparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </body>
+</html>
+
+
