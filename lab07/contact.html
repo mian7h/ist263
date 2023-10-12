@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <nav> <a href="index.html">Home</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+            <p>
+                Mian Muhammad Abdul Hamid <br>
+                900 S Crouse Ave <br>
+                Syracuse, NY 13244 <br>
+                <a href="mailto:mmhamid@syr.edu"> Mian Muhammad Abdul Hamid Email</a> <br>
+                <a href="https://www.linkedin.com/in/mian-hamid"> <img src="../images/logo-sized.png" alt="LinkedIn Block Logo" width="200"> <br> My LinkedIn Profile</a><br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.6238585955443!2d-76.138055!3d43.049344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a5e0952113%3A0xa671279445418b15!2s820-900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1694722500220!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Form</h2>
+        <form action="https://formspree.io/f/moqokkle" method="POST">
+             <label for="fullname">What's your name:</label><br>
+             <input type="text" id="fullname" name="Full Name"><br>
+
+             <input type="radio" id="Phone" name="phoneorE-mail"
+             value="customer_wants_phone"> 
+             <label>Phone</label>
+             <input type="radio" id="e-mail" name="phoneorE-mail">
+             <label for="e-mail">E-mail</label><br>
+
+             <label for="Contact"> Provide a Phone or E-mail:</label><br>
+             <textarea id="Contact" name="Contact" rows="3" cols="50"> </textarea><br>
+
+            <input type="checkbox" id="sign_up" name="sign_up" value="sign_up">
+            <label for="sign_up">Sign me up for monthly Newsletters!</label><br>
+
+            <label>Who are you?</label><br>
+            <select id="identity" name="identity">
+                <option> Select an Option</option>
+                <option value="First-Year Student">First-Year Student</option>
+                <option value="Second-Year Student">Second-Year Student</option>
+                <option value="Third-Year Student">Third-Year Student</option>
+                <option value="Fourth-Year Student">Fourth-Year Student</option>
+                <option value="Master's Student">Master's Student</option>
+                <option value="PhD Student">PhD Student</option>
+                <option value="Employer">Employer</option>
+                <option value="Other">Other</option>
+
+            </select><br>
+
+            <input type="submit" value="send form">
+        </form>
+    &copy; 2023
+    </body>
+</html>
