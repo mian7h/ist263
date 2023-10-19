@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Unit 8 Flex</title>
+        <meta charset="UTF-8">
+        <style>
+            body {background-color: #999999;}
+            img {width: 150px;}
+           /* footer colors background is #000e54, text is #c9cbd0 */
+           .row1, .row2 {display: flex;} /* auto puts columns next to each other */
+           .row1 div, .row2 div { /* Selects divs inside element with row1 class */
+                flex: 1;
+                padding: 10px;
+           }
+           footer {
+                background-color: #2b8ba0;
+                color: #c9cbd0;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           }
+           .color {color: #ff0000; font-weight: bold;} 
+        </style>
+    </head>
+    <body>
+
+        <footer>
+            <p><span class="color">Lorem </span> ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi fuga aut. Ab dignissimos fuga doloremque in, modi aut, voluptate exercitationem error nulla dolor dolorum corporis veritatis ad distinctio adipisci!</p>
+            <!-- this is my flexbox -->
+            <div class="row1"> <!-- contianer tag for the row -->
+                <div class="quick">
+                    <p>
+                        <strong>Fast Food Restaurants:</strong><br>
+                        Subway<br>
+                        Burger King<br>
+                        McDonald's<br>
+                        Wendy's<br>
+                        </p>
+                </div>
+                <div class="quick">
+                    <p>
+                        <strong> Home-Cooked Dishes: </strong><br>
+                        Biryani <br>
+                        Fried Rice <br>
+                        Kebsa<br>
+                        </p>
+                </div>
+                <div class="quick">
+                    <p>
+                        <strong>Drinks: </strong><br>
+                        Hot Chocolate<br>
+                        Milkshake<br>
+                        </p>
+                </div>
+                <div class="quick">
+                    <p>
+                        <strong>Desserts: </strong><br>
+                        Lava Cake<br>
+                        Black Forest Cake<br>
+                        Tiramisu<br>
+                        </p>
+                </div>
+            </div>
