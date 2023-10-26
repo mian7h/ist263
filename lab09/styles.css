@@ -1,0 +1,30 @@
+h1 {color: #056262;
+    background-color: #ffffff;
+    } /* use hex colors from now on */
+    a:hover {color: #00fffb;} /* pseudo selector - selects a state of an element */
+    body {background-color: #008080;
+        /* background-image: url("../images/otto.jpg");
+        background-size: 20%; */
+    }
+    p {
+        color: #004339;
+        background-color: #efefef9c;
+        padding: 20px; /* space inside the box */
+        border: 2px solid #333333;
+        margin: 30px;
+    }
+    nav {background-color: #06aed4; padding: 10px; margin-bottom: 30px} 
+    nav a:hover {background-color: #0051ff}
+    nav a {color: #fefefe;}
+    a {color: #f5f5DC;}
+    form, h2, table {color: #ffffff;}
+    .row1 {display: flex; padding: 20px; margin: 20px; background-color:#11c7c7; border-radius: 1em;}
+    .row2 {display: flex; padding: 20px; margin: 20px; background-color:#056262; border-radius: 1em;}
+    .address {padding: 20px; margin: 20px;}
+    .links {padding: 20px; margin: 20px;}
+    .map, .forms {padding: 20px; margin: 20px;}
+    .heading2 {text-align: center;}
+    .div1 {display: flex; justify-content: space-evenly; width: 800px; padding: 20px; margin-top: 20px;}
+    .div2 {display: flex; justify-content: space-evenly; padding: 20px; margin-top: 20px;}
+    .other {background-color: #00eaff93; border-radius: 1em;}
+
