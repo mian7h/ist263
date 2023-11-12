@@ -16,7 +16,9 @@ h1, h2, {color: #056262;
     nav {background-color: #057a94; padding: 10px; margin-bottom: 30px} 
     nav a:hover, .contactid:hover {background-color: #0051ff}
     nav a {color: #fefefe;}
-    a, div, .fun {color: #f5f5DC;}
+    a {color: #f5f5DC;}
+    div {color: #FAFAEF}
+    .fun, .leftbanner, .rightbanner, span,{color: #fafaef}
     form, table {color: #ffffff;}
     .row1 {display: flex; padding: 20px; margin: 20px; background-color:#11c7c7; border-radius: 1em; flex-wrap:wrap;}
     .row2 {display: flex; padding: 20px; margin: 20px; background-color:#056262; border-radius: 1em; flex-wrap:wrap;}
