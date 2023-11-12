@@ -13,10 +13,10 @@ h1, h2 {color: #056262;
         border: 2px solid #333333;
         margin: 30px;
     }
-    nav {background-color: #058ead; padding: 10px; margin-bottom: 30px} 
+    nav, {background-color: #058ead; padding: 10px; margin-bottom: 30px} 
     nav a:hover {background-color: #0051ff}
     nav a {color: #fefefe;}
-    a {color: #f5f5DC;}
+    a, div,.fun {color: #f5f5DC;}
     form, table {color: #ffffff;}
     .row1 {display: flex; padding: 20px; margin: 20px; background-color:#11c7c7; border-radius: 1em; flex-wrap:wrap;}
     .row2 {display: flex; padding: 20px; margin: 20px; background-color:#056262; border-radius: 1em; flex-wrap:wrap;}
