@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        #modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            margin-left: -100px;
+            margin-top: -100px;
+            display: none;
+            padding: 5px;
+        }
+        #subscribe {
+            background-color: #e9967a;
+            padding: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        #close-button {
+            text-align: right;
+            margin: 0px;
+
+        }
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById('modal').style.display = 'block'
+        }
+        function closeModal () {
+            document.getElementById('modal').style.display = 'none'
+        }
+    </script>
+</head>
+<body>
+        <div id="container">
+        <img src="https://laferger.github.io/ist263/images/cupcakes.jpg"
+        alt="banner of cupcakes">
+        <h1>Desserts</h1>
+        <p>Gingerbread cupcake cotton candy liquorice candy canes marzipan gummi bears cheesecake soufflé. Bonbon apple pie soufflé carrot cake tiramisu. Sweet marzipan candy canes cake topping. Cake shortbread bear claw soufflé oat cake tootsie roll cake soufflé. Tootsie roll topping gummies marshmallow marzipan lollipop lemon drops ice cream jelly-o. Gummies jujubes liquorice dragée halvah cake. Donut carrot cake caramels caramels tootsie roll marshmallow icing bonbon. Oat cake brownie sweet roll bonbon cotton candy pie. Gingerbread caramels gingerbread caramels biscuit topping cookie gummi bears danish. Liquorice donut macaroon pudding pudding dragée candy. Cake oat cake liquorice sesame snaps toffee. Powder pastry gummi bears biscuit topping. Pastry jelly beans sweet bonbon pastry bear claw. Dragée lollipop carrot cake brownie jelly beans tootsie roll soufflé lollipop.</p>
+        <p>Bear claw topping donut cotton candy sugar plum sugar plum. Lemon drops powder gummies chocolate marshmallow caramels. Biscuit powder sweet roll cotton candy croissant fruitcake. Marzipan toffee lemon drops pastry muffin pudding powder jujubes. Donut jelly-o jelly-o toffee sweet roll. Cotton candy jelly beans oat cake pie candy canes toffee sweet roll. Fruitcake cookie dessert cookie cupcake. Liquorice shortbread macaroon sesame snaps oat cake brownie. Chupa chups danish donut macaroon shortbread sweet pie candy. Shortbread jelly beans pie jujubes powder apple pie donut candy. Gummi bears dessert candy carrot cake muffin soufflé shortbread. Cake pie shortbread jujubes tart biscuit chocolate cake. Biscuit cupcake tootsie roll chupa chups jelly beans. Candy shortbread sesame snaps biscuit wafer chocolate cake.</p>
+        <p>Chocolate cake sweet shortbread ice cream jelly. Fruitcake pie gummies topping pastry cookie. Croissant gingerbread apple pie danish tart cake apple pie cheesecake. Donut dragée halvah marshmallow liquorice powder sugar plum. Tootsie roll pastry sesame snaps dragée biscuit icing fruitcake. Halvah wafer sweet pie shortbread biscuit brownie. Halvah icing caramels dessert topping sesame snaps icing. Danish powder shortbread candy biscuit cotton candy. Cotton candy donut pie wafer dragée liquorice dessert cotton candy. Oat cake macaroon icing marshmallow tiramisu icing sugar plum. Danish icing cake cheesecake sweet roll soufflé gummi bears. Candy canes candy canes jelly-o biscuit icing. Sweet roll wafer chocolate bar pie sesame snaps cookie. Ice cream chocolate bar marzipan gingerbread sweet roll cheesecake liquorice dessert pudding.</p>
+        <p id="subscribe" onclick="openModal();">Subscribe to our mailing list</p>
+    </div>
+    <div id="modal">
+        <p id="close-button" onclick="closeModal();">X</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email"> Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input type="submit" value="Subscribe"><br>
+        </form>
+    </div>
+</body>
+</html>
