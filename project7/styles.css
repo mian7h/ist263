@@ -1,0 +1,233 @@
+/* This is going to be the home page */
+nav {
+    background-color: #005d6d; /* Background color for the navigation bar */
+    color: #ffffff; /* Text color for the navigation links */
+    padding: 10px;
+    text-align:center;
+}
+
+nav a {
+    text-decoration:dotted;
+    color: #9ff9ff; /* Default text color for navigation links */
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #a200ff; /* Background color on hover for navigation links */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Heading color */
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #77efff9f; /* Background color for the main container */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners for the image */
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.quick,
+.quick2 {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid #fff1d4; /* Border for the image containers */
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.quick img,
+.quick2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px; /* Rounded corners for the images */
+}
+
+.quick p,
+.quick2 p {
+    color: #002a30; /* Text color for the paragraphs */
+}
+
+.quick a,
+.quick2 a {
+    color: #007BFF; /* Link color */
+}
+
+.quick a:hover,
+.quick2 a:hover {
+    color: #0056b3; /* Link color on hover */
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row1,
+    .row2 {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .quick,
+    .quick2 {
+        width: 100%;
+    }
+}
+/* This is going to be the second page */
+body {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #87CEEB;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Merriweather', serif;
+  }
+ 
+  .flex-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #85cec3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+  }
+ 
+  .box {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+ 
+  .box h2 {
+    margin-bottom: 10px;
+  }
+ 
+  .box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .intro {
+    display:flexbox;
+    flex-basis: 100%;
+    padding: 25px;
+    background-color: #9ff9ff;
+    border-radius: 75px;
+  }
+  .box img:hover {
+    transform: scale(2.1);
+  }
+
+  /* Parralax */
+  .intro {
+    height: 600px; /* Set a fixed height for the parallax section */
+    overflow: hidden;
+    position: relative;
+}
+
+.intro h1 {
+    text-align: center;
+    color: #fff; /* Text color for the heading */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+}
+
+.intro::before {
+    content: "";
+    background: url(../project3/media/plax.jpeg) center/cover no-repeat fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.main {
+    width: 80%;
+    background-color: #9ff9ff; /* White background color for the main container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+.image-label {
+    margin-top: 5px;
+}
+
+.backinfo {
+    text-align: center;
+    padding: 25px;
+    border: 5px solid #00f7ff;
+    border-radius: 50px;
+    background-color: #9ff9ff;
+}
+
+.skip {
+    background-color: #005347;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /* positions an element relative to the top left corner of the viewport */
+    top: 5px;
+    right: 900px; /* push off the left side */
+}
+
+.skip:focus {
+    left: 10px;
+}
